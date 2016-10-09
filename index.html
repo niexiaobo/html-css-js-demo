@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- style 样式设置在这个标签里 -->
+    <style>
+
+
+
+    </style>
+
+    <style type="text/css">
+        table tr td,th{border:1px solid #000;}
+    </style>
+
+    <link rel="stylesheet" href="knowCSS.css">
+    <!--<script src="../js/jquery.js"></script>-->
+
+</head>
+<body>
+
+<h2 class="blue">心似桂花开</h2>
+
+<!--  2-5 加入强调语气，使用<strong>和<em>标签 斜体和加重 -->
+<p><strong>1922年的春天</strong>，一个想要成名名叫<em>尼克•卡拉威</em>（托比•马奎尔Tobey Maguire饰）的作家，离开了美国中西部。</p>
+
+<!-- 短文本引用- 双引号 -->
+<q>暗淡轻黄体性柔，情疏迹远只香留。何须浅碧深红色，自是花中第一流。</q>
+
+<!-- 长文本引用 -前后空格 -->
+<blockquote>暗淡轻黄体性柔，情疏迹远只香留。何须浅碧深红色，自是花中第一流。</blockquote>
+
+<!--  2-6 使用<span>标签为文字设置单独样式 head 中 style 里设置-->
+<p>为文字设置单独样式，<span>情疏迹远只香留</span>。</p>
+
+<!-- 换行 br -->
+<p>暗淡轻黄体性柔，<br />情疏迹远只香留。<br /> 何须浅碧深红色，<br />自是花中第一流。</p>
+
+<!-- 添加一些空格 -->
+添加一些空格&nbsp;&nbsp;&nbsp;&nbsp;空格&nbsp;&nbsp;&nbsp;&nbsp;空格
+
+<!-- 添加水平横线 -->
+<hr />
+
+<!-- 为网页加入地址信息  -->
+<address>
+    上海市青浦区258号。<br />
+    本文的作者：<a href="https://github.com/niexiaobo">聂小波</a>
+</address>
+
+<!-- 加入一行代码吗？使用<code>标签  -->
+<br />
+加入一行代码（输入空格有效）：<code>  var i = i + 300 ;</code>
+
+<!-- 使用<pre>标签为你的网页加入大段代码  -->
+<pre>
+    <br />使用pre标签为你的网页加入大段代码：（输入空格或者换行有效）
+    var message="欢迎";
+    for(var i=1;i<=10;i++)
+    {
+        alert(message);
+    }
+</pre>
+<h2 class="blue">信息列表</h2>
+<!-- 使用ul，添加新闻信息列表  -->
+<hr />
+<p>在浏览网页时，你会发现网页上有很多信息的列表，如新闻列表、图片列表。<br />这些列表就可以使用ul-li标签来完成。ul-li是没有前后顺序的信息列表。</p>
+<ul>
+    <li>精彩少年</li>
+    <li>美丽突然出现</li>
+    <li>触动心灵的旋律</li>
+    ......
+</ul>
+
+
+<ol>
+    <li>前端开发面试心法 </li>
+    <li>零基础学习html</li>
+    <li>JavaScript全攻略</li>
+</ol>
+
+<h2 class="blue">创建表格</h2>
+<!--
+创建表格的四个元素:
+table、tbody、tr、th、td
+
+1、<table>…</table>：整个表格以<table>标记开始、</table>标记结束。
+
+2、<tbody>…</tbody>：当表格内容非常多时，表格会下载一点显示一点，但如果加上<tbody>标签后，这个表格就要等表格内容全部下载完才会显示。如右侧代码编辑器中的代码。
+
+3、<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行。
+
+4、<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列。
+
+5、<th>…</th>：表格的头部的一个单元格，表格表头。
+
+6、表格中列的个数，取决于一行中数据单元格的个数
+
+summary:为表格添加摘要  caption:为表格添加标题 style:head里设置表格线-->
+
+<table summary = "本表格记录2012年到2013年学生数、平均成绩">
+    <caption>2012年到2013学生数、平均成绩</caption>
+    <tbody>
+    <tr>
+        <th>班级</th>
+        <th>学生数</th>
+        <th>平均成绩</th>
+    </tr>
+    <tr>
+        <td>一班</td>
+        <td>30</td>
+        <td>89</td>
+    </tr>
+    <tr>
+        <td>二班</td>
+        <td>35</td>
+        <td>85</td>
+    </tr>
+    <tr>
+        <td>三班</td>
+        <td>32</td>
+        <td>80</td>
+    </tr>
+    </tbody>
+</table>
+<hr />
+
+<h2 class="blue">新建浏览器窗口 and 发邮件  and 图片</h2>
+<!--  <a  href="目标网址"  title="鼠标滑过显示的文本">链接显示的文本</a> target：_blank新建浏览器窗口打开  -->
+<a  href="http://www.imooc.com" target="_blank" title="点击进入慕课网">链接到另一个页面：click here!</a>
+<br />
+<br />
+<!--   -->
+<pre>
+    发邮件:Mailto开头后跟地址
+
+    <a href="Mailto:flash_lifing@163.com">给我发邮件: 简单模式</a>
+
+    <a href="Mailto:flash_lifing@163.com?CC=test11@163.com&BCC=test22@qq.com&Subject=Hello&Body=你好">给我发邮件：已填写抄送和主题</a>
+
+</pre>
+
+<!--   -->
+<pre>
+
+    img标签： src="图片地址" alt="下载失败时的替换文本" title = "鼠标滑过图片时显示提示文本"
+
+    <img src = "http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" alt = "My Image" title = "My Image" />
+
+</pre>
+<!--   -->
+
+<!--
+网站怎样与用户进行交互？答案是使用HTML表单(form)。表单是可以把浏览者输入的数据传送到服务器端，这样服务器端程序就可以处理表单传过来的数据。
+语法：
+<form   method="传送方式"   action="服务器文件">
+讲解：
+1.<form> ：<form>标签是成对出现的，以<form>开始，以</form>结束。
+2.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。
+3.method ： 数据传送的方式（get/post）。
+<form    method="post"   action="save.php">
+        <label for="username">用户名:</label>
+        <input type="text" name="username" />
+        <label for="pass">密码:</label>
+        <input type="password" name="pass" />
+</form>
+注意:
+1、所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在<form></form>标签之间（否则用户输入的信息可提交不到服务器上哦！）。
+2、method:post/get的区别这一部分内容属于后端程序员考虑的问题。感兴趣的小伙伴可以查看本小节的wiki，里面有详细介绍。   -->
+<h2 class="blue">使用表单标签，与用户交互</h2>
+
+<form method="post" action="save.php">
+    <label for="username">用户名:</label>
+    <input type="text"  name="username" id="username" value="" />
+    <label for="pass">密码:</label>
+    <input type="password"  name="pass" id="pass" value="" />
+    <input type="submit" value="确定"  name="submit" />
+    <input type="reset" value="重置" name="reset" />
+</form>
+<br />
+<h3 class="blue">文本输入框、密码输入框</h3>
+<br />
+<form  method="post" action="save.php">
+    账户:
+    <input  type="text"  name="myName" />
+    <br>
+    密码:
+    <input  type="password"  name="pass" />
+</form>
+<br />
+<h3>文本域，支持多行文本输入</h3>
+<br />
+<form action="save.php" method="post" >
+    <label>个人简介：</label>
+    <textarea cols="50" rows="10">在这里输入内容...</textarea>
+    <input type="submit" value="确定"  name="submit" />
+    <input type="reset" value="重置"  name="reset" />
+</form>
+<!--  option value="看书" (提交服务器值)  selected="selected"（默认选中值） > 看书 （显示值）</option -->
+<h3 class="blue">使用下拉列表框，节省空间</h3>
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <select>
+        <option value="看书">看书</option>
+        <option value="旅游" selected="selected">旅游</option>
+        <option value="运动">运动</option>
+        <option value="购物">购物</option>
+    </select>
+</form>
+<br />
+<!-- 设置multiple"属性，多选时按下Ctrl键同时进行单击  -->
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <select multiple="multiple">
+        <option value="看书">看书</option>
+        <option value="旅游">旅游</option>
+        <option value="运动">运动</option>
+        <option value="购物">购物</option>
+    </select>
+</form>
+<br />
+<!--
+ type：只有当type值设置为submit时，按钮才有提交作用 ，
+ type：当type值设置为reset时，按钮才有重置作用
+ type="text" 输入文本
+ -->
+<form  method="post" action="save.php">
+    <label for="myName">姓名：</label>
+    <input type="text" value=" " name="myName" id="myName"/>
+    <input type="submit" value="提交" name="submitBtn" />
+    <input type="reset" value="重置"  />
+</form>
+<br />
+<!--
+ label for="" :label添加该属性后，如果你点击该 label ，浏览器就自动选中和该label标签相关连的表单控件上，尤其使用单选框。
+ for="" 与  id="" 要一一对应
+ -->
+<form>
+    <label for="male">男</label>
+    <input type="radio" name="gender" id="male" />
+    <br />
+    <label for="female">女</label>
+    <input type="radio" name="gender" id="female" />
+    <br />
+    <label for="email">输入你的邮箱地址</label>
+    <input type="email" id="email" placeholder="Enter email">
+
+</form>
+
+<h1 align="center" class="red">CSS 样式</h1>
+<!--   -->
+<p class="redblod">CSS全称为“<span class="black">层叠样式表</span> (<span class="blue">Cascading Style Sheets</span>)”，它主要是用于<span class="black">定义HTML</span>内容在浏览器内的显示样式，如文字大小、颜色、字体加粗等。</p>
+<!-- 内联式css样式，直接写在现有的HTML标签中 style="color:blue" -->
+<p>内联式css样式，直接写在现有的HTML标签中:<span style="color:blue">超酷的互联网</span> </p>
+<!--   -->
+<p>三种样式是有优先级的，记住他们的优先级：内联式 > 嵌入式 > 外部式</p>
+
+<h2>类和ID选择器的区别</h2>
+<pre>
+    相同点：可以应用于任何元素
+    不同点：
+    1、ID选择器只能在文档中使用一次。class多次
+    <!--<span id="stress">胆小如鼠</span><span id="stress">胆小如鼠2</span>-->
+    2、可以使用类选择器词列表方法为一个元素同时设置多个样式。ID选择器不可以
+<!--
+正确✔️：
+.stress{
+    color:red;
+}
+.bigsize{
+    font-size:25px;
+}
+<p>到了<span class="stress bigsize">三年级</span>下学期时，我们班上了一节公开课...</p>
+
+
+错误❎：
+#stressid{
+    color:red;
+}
+#bigsizeid{
+    font-size:25px;
+}
+<p>到了<span id="stressid bigsizeid">三年级</span>下学期时，我们班上了一节公开课...</p>
+
+
+-->
+
+</pre>
+<h2>子选择器</h2>
+<!--
+还有一个比较有用的选择器:子选择器，即大于符号(>),用于选择指定标签元素的第一代子元素。如右侧代码编辑器中的代码：
+
+.food>li{border:1px solid red;}
+
+这行代码会使class名为food下的子元素li（水果、蔬菜）加入红色实线边框。
+  -->
+
+<p class="first">一个<span>比较有用</span>的选择器<span>子选择器</span></p>
+
+<h2>包含(后代)选择器</h2>
+<!-- 包含选择器，即加入空格,用于选择指定标签元素下的后辈元素。如右侧代码编辑器中的代码：
+.first  span{color:red;}
+这行代码会使第一段文字内容中的“胆小如鼠”字体颜色变为红色。  -->
+
+<p class="second">一个<span>比较有用</span>的选择器<span>子选择器</span></p>
+
+<h2>通用选择器</h2>
+<p>通用选择器是功能最强大的选择器，它使用一个（*）号指定，它的作用是匹配html中所有标签元素，如下使用下面代码使用html中任意标签元素字体颜色全部设置为红色：* {color:red;}</p>
+
+<h2>伪类选择符</h2>
+<p>更有趣的是伪类选择符，为什么叫做伪类选择符，它允许给html不存在的标签（标签的某种状态）设置样式，比如说我们给html中一个标签元素的鼠标滑过的状态来设置字体颜色：a:hover{color:red;}</p>
+
+<p class="first">三年级时，我还是一个<a href="http://www.imooc.com">胆小如鼠</a>的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+
+<h2>继承:见注释</h2>
+
+<!--
+
+CSS的某些样式是具有继承性的，那么什么是继承呢？继承是一种规则，它允许样式不仅应用于某个特定html标签元素，而且应用于其后代。比如下面代码：如某种颜色应用于p标签，这个颜色设置不仅应用p标签，还应用于p标签中的所有子元素文本，这里子元素为span标签。
+
+p{color:red;}
+
+<p>三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+可见右侧结果窗口中p中的文本与span中的文本都设置为了红色。但注意有一些css样式是不具有继承性的。如border:1px solid red;
+
+p{border:1px solid red;}
+
+<p>三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+在上面例子中它代码的作用只是给p标签设置了边框为1像素、红色、实心边框线，而对于子元素span是没用起到作用的。
+ -->
+
+
+<h2>特殊性</h2>
+<pre>
+    权值:优先级
+    p{color:red;} /*权值为1*/
+    p span{color:green;} /*权值为1+1=2*/
+    .warning{color:white;} /*权值为10*/
+    p span.warning{color:purple;} /*权值为1+1+10=12*/
+    #footer .note p{color:yellow;} /*权值为100+10+1=111*/
+
+</pre>
+
+<!-- 特殊性
+
+有的时候我们为同一个元素设置了不同的CSS样式代码，那么元素会启用哪一个CSS样式呢?我们来看一下面的代码：
+
+p{color:red;}
+.first{color:green;}
+<p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+p和.first都匹配到了p这个标签上，那么会显示哪种颜色呢？green是正确的颜色，那么为什么呢？是因为浏览器是根据权值来判断使用哪种css样式的，权值高的就使用哪种css样式。
+
+下面是权值的规则：
+
+标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。例如下面的代码：
+
+p{color:red;} /*权值为1*/
+p span{color:green;} /*权值为1+1=2*/
+.warning{color:white;} /*权值为10*/
+p span.warning{color:purple;} /*权值为1+1+10=12*/
+#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+
+注意：还有一个权值比较特殊--继承也有权值但很低，有的文献提出它只有0.1，所以可以理解为继承的权值最低。
+  -->
+
+<!-- 重要性
+
+我们在做网页代码的时，有些特殊的情况需要为某些样式设置具有最高权值，怎么办？这时候我们可以使用!important来解决。
+
+如下代码：
+
+p{color:red!important;}
+p{color:green;}
+<p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+
+这时 p 段落中的文本会显示的red红色。
+
+去掉!important会显示绿色，后者覆盖前者。
+
+ -->
+
+<h2>元素分类</h2>
+<pre>
+在讲解CSS布局之前，我们需要提前知道一些知识，在CSS中，html中的标签元素大体被分为三种不同的类型：块状元素、内联元素(又叫行内元素)和内联块状元素。
+
+常用的块状元素有：
+
+div、p、h1...h6、ol、ul、dl、table、address、blockquote 、form
+
+常用的内联元素有：
+
+a、span、br、i、em、strong、label、q、var、cite、code
+
+常用的内联块状元素有：
+
+img、input
+</pre>
+
+<h2>元素分类--块级元素</h2>
+<!-- 元素分类--块级元素
+
+什么是块级元素？在html中<div>、 <p>、<h1>、<form>、<ul> 和 <li>就是块级元素。设置display:block就是将元素显示为块级元素。如下代码就是将内联元素a转换为块状元素，从而使a元素具有块状元素特点。
+
+a{display:block;}
+
+块级元素特点：
+
+1、每个块级元素都从新的一行开始，并且其后的元素也另起一行。（真霸道，一个块级元素独占一行）
+
+2、元素的高度、宽度、行高以及顶和底边距都可设置。
+
+3、元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度。  -->
+
+<h2>元素分类--内联元素</h2>
+<!-- 元素分类--内联元素
+
+在html中，<span>、<a>、<label>、 <strong> 和<em>就是典型的内联元素（行内元素）（inline）元素。当然块状元素也可以通过代码display:inline将元素设置为内联元素。如下代码就是将块状元素div转换为内联元素，从而使 div 元素具有内联元素特点。
+
+ div{
+     display:inline;
+ }
+
+......
+
+<div>我要变成内联元素</div>
+
+内联元素特点：
+
+1、和其他元素都在一行上；
+
+2、元素的高度、宽度及顶部和底部边距不可设置；
+
+3、元素的宽度就是它包含的文字或图片的宽度，不可改变。  -->
+
+<h2>元素分类--内联块状元素</h2>
+<!-- 元素分类--内联块状元素
+
+内联块状元素（inline-block）就是同时具备内联元素、块状元素的特点，代码display:inline-block就是将元素设置为内联块状元素。(css2.1新增)，<img>、<input>标签就是这种内联块状标签。
+
+inline-block 元素特点：
+
+1、和其他元素都在一行上；
+
+2、元素的高度、宽度、行高以及顶和底边距都可设置。
+
+提示：下一小节是用视频动画来讲解css中的盒模型。
+  -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+<!--   -->
+
+
+<!--   -->
+<!--   -->
+<!--   -->
+<!--   -->
+<!--   -->
+<!--   -->
+<!--   -->
+<!--   -->
+
+
+</body>
+</html>
