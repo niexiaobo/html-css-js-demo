@@ -95,3 +95,168 @@ body.Yahei{
 
 }
 
+/*盒子边框*/
+div.border1{
+    border-width:2px;
+    /*dashed（虚线）| dotted（点线）| solid（实线）*/
+    border-style:solid;
+    border-color:red;
+}
+/*盒子边框*/
+div.border2{
+    border-width:2px;
+    /*dashed（虚线）| dotted（点线）| solid（实线）*/
+    border-style:solid;
+    border-color:orange;
+
+    /*同样可以使用下面代码单独实现四边(上、下、右、左)边框的设置：*/
+    border-bottom:1px solid orchid;
+    /*border-top:1px solid red;*/
+    /*border-right:1px solid red;*/
+    /*border-left:1px solid red;*/
+}
+
+/*宽度和高度*/
+div.WHBM{
+    width:200px;
+    padding:20px;
+    border:1px solid red;
+    margin:10px;
+}
+
+/*盒模型--填充*/
+/*分为上、右、下、左(顺时针)    */
+div.padding1{
+    padding:20px 10px 15px 30px;
+}
+/*效果同上*/
+div.padding2{
+    padding-top:20px;
+    padding-right:10px;
+    padding-bottom:15px;
+    padding-left:30px;
+}
+/*如果上、右、下、左的填充都为10px;可以这么写*/
+div.padding3{
+    padding:10px;
+}
+/*如果上下填充一样为10px，左右一样为20px，可以这么写：*/
+div.padding4{
+    padding:10px 20px;
+}
+
+
+/*盒模型--边界*/
+/*可分为上、右、下、左。如下代码：*/
+div.margin1{
+    margin:20px 10px 15px 30px;
+}
+
+/*也可以分开写：*/
+div.margin2{
+    margin-top:20px;
+    margin-right:10px;
+    margin-bottom:15px;
+    margin-left:30px;
+}
+
+/*如果上右下左的边界都为10px;可以这么写：*/
+div.margin3{
+    margin:10px;
+}
+
+/*如果上下边界一样为10px，左右一样为20px，可以这么写：*/
+div.margin4{
+    margin:10px 20px;
+}
+div.absolute{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:absolute;
+    left:200px;
+    top:50px;
+}
+#divrelative{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:relative;
+    left:100px;
+    top:50px;
+}
+#divfixed{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:fixed;
+    left:100px;
+    top:50px;
+}
+
+
+
+/*Relative与Absolute组合使用*/
+div.RelAbsol{
+    border:2px red solid;
+}
+#boxRelAbsol1{
+    width:200px;
+    height:200px;
+    position:relative;
+}
+#boxRelAbsol2{
+    position:absolute;
+    top:20px;
+    left:30px;
+}
+/*下面是任务部分*/
+#boxRelAbsol3{
+    width:200px;
+    height:200px;
+}
+#boxRelAbsol4{
+    width:99%;
+}
+
+
+/*1、英文命令颜色*/
+p.colorset1{
+    color:red;
+}
+/*2、RGB颜色*/
+p.colorset2{
+    color:rgb(133,45,200);
+}
+/*每一项的值可以是 0~255 之间的整数，也可以是 0%~100% 的百分数。如：*/
+p.colorset3{
+    color:rgb(20%,33%,25%);
+}
+/*3、十六进制颜色 十六进制 00-ff*/
+p.colorset4{
+    color:#00ffff;
+}
+
+/*设置div内文本水平居中*/
+div.textcenter{
+    border:1px solid red;
+    margin:20px;
+    text-align:center;
+}
+
+/*水平居中总结-不定宽块状元素方法*/
+div.container{
+    text-align:center;
+}
+div.container ul{
+    list-style:none;margin:0;padding:0;display:inline;
+}
+div.container li{
+    margin-right:8px;display:inline;
+}
+
+
+
+
+
+
